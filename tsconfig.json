@@ -4,6 +4,8 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "target": "es5",
+    "lib": ["dom"],
+    "allowJs": true,
     "strict": true,
     "declaration": false,
     "outDir": "./www",
@@ -13,5 +15,6 @@
     "noUnusedParameters": true,
     "removeComments": true
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/*"],
+  "exclude": ["./public/**/*", "./www/**/*"]
 }
