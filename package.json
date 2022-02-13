@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "A Typescript web app project that just works",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run copypublic && webpack --mode production",
+    "copypublic": "rm -rf ./www && scp -r ./public ./www",
+    "prestart": "npm run copypublic",
+    "start": "serve -s ./www & webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,7 @@
   "homepage": "https://github.com/victoroliveirab/webpack-typescript-template#readme",
   "devDependencies": {
     "prettier": "^2.5.1",
+    "serve": "^13.0.2",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.5",
     "webpack": "^5.68.0",
