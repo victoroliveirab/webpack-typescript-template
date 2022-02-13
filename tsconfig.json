@@ -16,5 +16,5 @@
     "removeComments": true
   },
   "include": ["./src/**/*"],
-  "exclude": ["./public/**/*", "./www/**/*"]
+  "exclude": ["./public/**/*", "./www/**/*", "node_modules"]
 }
