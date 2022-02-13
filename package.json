@@ -8,22 +8,13 @@
     "prestart": "npm run copypublic",
     "start": "serve -s ./www & webpack --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/victoroliveirab/webpack-typescript-template.git"
-  },
   "keywords": [
     "template",
     "scaffold",
     "typescript",
     "webpack"
   ],
-  "author": "Victor Oliveira <eu@victoroliveira.com.br> (https://www.victoroliveira.com.br)",
   "license": "0BSD",
-  "bugs": {
-    "url": "https://github.com/victoroliveirab/webpack-typescript-template/issues"
-  },
-  "homepage": "https://github.com/victoroliveirab/webpack-typescript-template#readme",
   "devDependencies": {
     "prettier": "^2.5.1",
     "serve": "^13.0.2",
