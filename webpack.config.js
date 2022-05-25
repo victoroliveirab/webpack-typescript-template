@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const entryFile = './src/index.ts';
 const outDir = './www';
@@ -25,6 +26,13 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './public/index.html',
+      inject: 'body',
+    }),
+  ],
   watchOptions: {
     ignored: /node_modules/,
   },

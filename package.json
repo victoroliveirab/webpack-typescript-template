@@ -4,8 +4,6 @@
   "description": "A Typescript web app project that just works",
   "scripts": {
     "build": "npm run copypublic && webpack --mode production",
-    "copypublic": "rm -rf ./www && scp -r ./public ./www",
-    "prestart": "npm run copypublic",
     "start": "serve -s ./www & webpack --watch"
   },
   "keywords": [
@@ -16,6 +14,7 @@
   ],
   "license": "0BSD",
   "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
     "prettier": "^2.5.1",
     "serve": "^13.0.2",
     "ts-loader": "^9.2.6",
